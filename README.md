@@ -1,32 +1,32 @@
 # Movie Finder
 
-Projet front-end statique en HTML, CSS et JavaScript vanilla utilisant l'API OMDb.
+Static front-end project built with HTML, CSS, and vanilla JavaScript using the OMDb API.
 
-## Cle API
+## API Key
 
-Le fichier `.env` sert uniquement a eviter de pousser ta cle OMDb sur GitHub. Le navigateur ne lit pas directement `.env`.
+The `.env` file is only used to avoid pushing your OMDb API key to GitHub. The browser does not read `.env` directly.
 
-Pour lancer le projet localement :
+To run the project locally:
 
-1. Ouvre `.env` et remplace `COLLE_TA_CLE_API_ICI` par ta vraie cle OMDb.
-2. Ouvre `config.js` et copie la meme valeur dans :
+1. Open `.env` and replace `COLLE_TA_CLE_API_ICI` with your real OMDb API key.
+2. Open `config.js` and copy the same value into:
 
 ```js
 window.OMDB_API_KEY = "COLLE_TA_CLE_API_ICI";
 ```
 
-Les fichiers `.env` et `config.js` sont ignores par Git pour eviter de pousser la cle sur GitHub.
+The `.env` and `config.js` files are ignored by Git to avoid pushing the API key to GitHub.
 
-## Lancement
+## Run
 
-Ouvre directement `index.html` dans ton navigateur.
+Open `index.html` directly in your browser.
 
-Si ton navigateur bloque certaines requetes locales, utilise une extension comme Live Server. Aucun backend, aucune dependance npm et aucun build step ne sont necessaires.
+If your browser blocks some local requests, use an extension such as Live Server. No backend, npm dependency, or build step is required.
 
-## Deploiement
+## Deployment
 
-Le projet peut etre mis en ligne sur GitHub Pages ou equivalent.
+The project can be deployed to GitHub Pages or an equivalent static hosting service.
 
-Comme `config.js` est ignore par Git, pour un deploiement GitHub Pages il faut soit renseigner temporairement la cle dans `config.js` avant de deployer si le depot est prive ou si l'exposition de la cle est acceptee, soit creer `config.js` directement dans l'environnement de deploiement si possible.
+Because `config.js` is ignored by Git, for a GitHub Pages deployment you must either temporarily add the key to `config.js` before deploying if the repository is private or if exposing the key is acceptable, or create the `config.js` file directly in the deployment environment if possible.
 
-Ce projet ne cache pas la cle cote navigateur. Elle reste visible dans le front et dans les requetes reseau.
+This project does not hide the key on the browser side. It remains visible in the front end and in network requests.
